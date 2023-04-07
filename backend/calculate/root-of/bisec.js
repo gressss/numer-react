@@ -9,7 +9,6 @@ export const Bisection = (req,res) =>{
         let f = simplify(eq).toString()
         return evaluate(f,{x})
     }
-    
     const {formdata} = req.body
     console.log(formdata)
     let arr = []
@@ -22,6 +21,8 @@ export const Bisection = (req,res) =>{
     let errpb = formdata.err;
     console.log(errpb)
     let i = 0,xm = 0,er = 1;
+
+    
 
     while(er>errpb){
 
